@@ -1,0 +1,14 @@
+version: "3"
+
+dotenv:
+  - .env
+
+tasks:
+
+  launch_frontend:
+    desc: launch frontend
+    cmds:
+      - docker run --rm -it   -p 3000:3000   -v "$(pwd)/frontend:/app"   -v /app/node_modules   frontend_course:latest bash
+
+
+#
