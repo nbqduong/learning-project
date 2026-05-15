@@ -1,0 +1,1 @@
+import{a as u}from"./CBrfxHRS.js";import{c as n}from"./DipNzD21.js";function i(){const e=u("authToken",()=>null),t=u("currentUser",()=>null),o=(r,l)=>{e.value=r,t.value=l},s=()=>{e.value=null,t.value=null};return{token:e,currentUser:t,isLoggedIn:n(()=>!!e.value),isInstructor:n(()=>t.value?.role==="instructor"),setSession:o,clearSession:s}}export{i as u};
